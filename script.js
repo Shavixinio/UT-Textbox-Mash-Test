@@ -7,7 +7,7 @@ let lastSecond = Date.now();
 let lastKeyPress = Date.now();
 let lastTextboxTime = Date.now();
 let waitingForX = false;
-const UPDATE_INTERVAL = 0.2;
+const UPDATE_INTERVAL = 0.1;
 
 // Track total textboxes over a 1-second window
 let textboxWindow = [];
@@ -56,4 +56,4 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-setInterval(updateCounter, 100);
+setInterval(updateCounter, 1000);
